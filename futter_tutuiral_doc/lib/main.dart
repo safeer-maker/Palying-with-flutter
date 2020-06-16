@@ -22,23 +22,26 @@ class home extends StatelessWidget {
         //  color: Colors.cyanAccent,
         //),
       ),
-      body: Container(
-        padding: EdgeInsets.symmetric( horizontal: 10.0, vertical: 5.0),
-        margin: EdgeInsets.fromLTRB( 22,  10.0,  2.0,  30.0),
-      //  alignment: Alignment.centerLeft,
-      //  height:90.0 ,
-      //  width: 100.0,
-
-        color: Colors.black12,
-        child: Text(
-          "Sam",
-          style: TextStyle(
-            color: Colors.orange,
-            fontSize: 50.0
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center ,
+        children: <Widget>[
+          Text("ONE"),
+          Text("Two"),
+          Padding(
+            padding: EdgeInsets.all(15.0),
+            child: Text("three"),
           ),
-
-        ),
-
+          Container(
+            color: Colors.greenAccent,
+            height: 70,
+            width: 100,
+            padding: EdgeInsets.all(10.0),
+           // alignment: Alignment.centerLeft,
+            child: Text("Container",
+           // textAlign: TextAlign.end,
+               ),
+          )
+        ],
       ),
 
       bottomNavigationBar: BottomAppBar(
