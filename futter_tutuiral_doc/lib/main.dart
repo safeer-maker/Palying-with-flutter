@@ -25,11 +25,26 @@ class home extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center ,
         children: <Widget>[
+          Row(
+            children: <Widget>[
+              Text("Love is high")
+            ],
+          ),
           Text("ONE"),
+          Row(
+            children: <Widget>[
+              Text("Love is high")
+            ],
+          ),
           Text("Two"),
           Padding(
             padding: EdgeInsets.all(15.0),
             child: Text("three"),
+          ),
+          Row(
+            children: <Widget>[
+              Text("Love is high")
+            ],
           ),
           Container(
             color: Colors.greenAccent,
@@ -40,8 +55,15 @@ class home extends StatelessWidget {
             child: Text("Container",
            // textAlign: TextAlign.end,
                ),
-          )
-        ],
+
+          ),
+          Row(
+            children: <Widget>[
+              Text("Love is high")
+            ],
+          ),
+
+         ],
       ),
 
       bottomNavigationBar: BottomAppBar(
