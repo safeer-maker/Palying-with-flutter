@@ -23,8 +23,24 @@ class home extends StatelessWidget {
         //),
       ),
       body: Container(
-        color: Colors.blueGrey,
+        padding: EdgeInsets.symmetric( horizontal: 10.0, vertical: 5.0),
+        margin: EdgeInsets.fromLTRB( 22,  10.0,  2.0,  30.0),
+      //  alignment: Alignment.centerLeft,
+      //  height:90.0 ,
+      //  width: 100.0,
+
+        color: Colors.black12,
+        child: Text(
+          "Sam",
+          style: TextStyle(
+            color: Colors.orange,
+            fontSize: 50.0
+          ),
+
+        ),
+
       ),
+
       bottomNavigationBar: BottomAppBar(
         child: Container(
           color: Colors.indigo,
@@ -36,6 +52,9 @@ class home extends StatelessWidget {
         child: Text(
           "Button",
           textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.white
+          ),
         ),
       ),
     );
